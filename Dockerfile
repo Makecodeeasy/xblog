@@ -2,6 +2,6 @@ FROM ubuntu:14.04
 
 WORKDIR /workspace
 
-COPY main /workspace/main
+COPY xblog /workspace/xblog
 
-CMD [ "./main" ]
+CMD [ "./xblog" ]
