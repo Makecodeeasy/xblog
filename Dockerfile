@@ -4,4 +4,6 @@ WORKDIR /workspace
 
 COPY xblog /workspace/xblog
 
+RUN mkdir -p /workspace/config
+
 CMD [ "./xblog" ]
