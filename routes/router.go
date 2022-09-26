@@ -40,7 +40,7 @@ func InitRouter() {
 	publicApiGroup := r.Group("api/v1")
 	{
 		// 测试接口
-		v1g.GET("hello", func(context *gin.Context) {
+		publicApiGroup.GET("hello", func(context *gin.Context) {
 			context.JSON(200, gin.H{
 				"message": "ok",
 			})
